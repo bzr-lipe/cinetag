@@ -3,7 +3,8 @@ import Favoritos from "pages/Favoritos";
 import Home from "pages/Home";
 import Header from "components/Header";
 import Footer from "components/Footer";
-import Container from './components/Container/index';
+import Container from 'components/Container';
+import FavoritosProvider from "contexts/Favoritos";
 
 
 export default function AppRoutes() {
@@ -11,10 +12,12 @@ export default function AppRoutes() {
     <BrowserRouter>
       <Header />
       <Container>
-        <Routes>
-          <Route path='/' element={ <Home /> } />
-          <Route path='/favoritos' element={ <Favoritos /> } />
-        </Routes>
+        <FavoritosProvider>
+          <Routes>
+            <Route path='/' element={ <Home /> } />
+            <Route path='/favoritos' element={ <Favoritos /> } />
+          </Routes>
+        </FavoritosProvider>
       </Container>
       <Footer />
     </BrowserRouter>
