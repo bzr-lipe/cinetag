@@ -1,15 +1,11 @@
 .footer {
-  background-color: var(--preto);
-  position: absolute;
-  bottom: 0;
-  height: 88px;
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  background-color: var(--preto);
 }
 
-.footer p {
-  color: var(--branco);
+.footer h2 {
+  font-weight: 400;
   font-size: 18px;
+  color: var(--branco);
 }

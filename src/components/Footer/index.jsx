@@ -3,9 +3,9 @@ import styles from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={ styles.footer }>
-      <p>
+      <h2>
         Desenvolvido por Felipe.
-      </p>
+      </h2>
     </footer>
   )
 }
